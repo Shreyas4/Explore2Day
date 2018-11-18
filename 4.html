@@ -1,0 +1,384 @@
+<!doctype html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        
+       
+        
+        <style>
+            body{
+                 margin:0;
+    height:100%;
+    overflow:hidden;
+            }
+          
+      
+            .left{
+               border-radius: 10px;
+           
+                position: absolute;
+                top: 21%;
+                left: 6.5%;
+                width: 30%;
+                height:68%;
+                opacity: 1;
+               
+            
+            }
+            .leftbox{
+               border-radius: 10px;
+            background-color: black;
+                position: absolute;
+                top: 21%;
+                left: 6.5%;
+                width: 30%;
+                height:68%;
+                opacity: 0.6;
+           
+            
+            }
+            
+            .left h2,.discover h2{font-family: gabriola;
+                text-align: center;
+                font-size: 50px;opacity: 1;
+                
+            }
+             .rightbox{
+                 display: none;
+               border-radius: 10px;
+            background-color: black;
+                position: absolute;
+                top: 21%;
+                right: 6.5%;
+                width: 30%;
+                height:68%;
+                opacity: 0.6;
+           
+            
+            }
+           
+            #destiname_r{
+                left: 65%;
+                top: 68%;
+                position: absolute;
+                font-size:500%;
+				font-family: gabriola;
+                color: white;
+            }
+            #destiname_l {
+                display: none;
+                 left: 10%;
+                top: 68%;
+                position: absolute;
+                font-size:500%;
+				font-family: gabriola;
+                color: white;
+	
+} 
+            .heade{ font-family: gabriola;
+                position: absolute;
+                left: -2px;
+                top:-6px;
+                width: 100%;
+                height: 100px;
+                background: black;
+                opacity: 0.6;
+            }
+            .header{ font-family: gabriola;
+                position: absolute;
+                left: -2px;
+                top:-40px;
+                width: 120%;
+                height: 100px;
+                
+                opacity: 1;
+            }
+            
+            
+			 .pro{font-size:160%;
+							  font-family: gabriola;}
+            #container1{
+                top:0px;
+                right:0px;
+            position: absolute;
+                width: 100%;
+                height:100%;
+            
+            
+            }
+              #container2{
+                left: 0px;
+                 bottom: 0px;
+                 display:none;
+            position: absolute;
+                width: 100%;
+                height:100%;
+            
+            
+            }
+              #container3{
+                left: 0px;
+                 bottom: 0px;
+                 display:none;
+            position: absolute;
+                width: 100%;
+                height:100%;
+            
+            
+            }
+             #container4{
+                left: 0px;
+                 bottom: 0px;
+                 display:none;
+            position: absolute;
+                width: 100%;
+                height:100%;
+            
+            
+            }
+            #image1{
+            position: absolute;
+                width: 100%;
+                height:100%;
+            
+            
+            }
+              #image2{
+            position: absolute;
+                width: 100%;
+                height:100%;
+                  
+            
+            
+            }
+             #image3{
+            position: absolute;
+                width: 100%;
+                height:100%;
+            
+            
+            }
+             #image4{
+            position: absolute;
+                width: 100%;
+                height:100%;
+            
+            
+            }
+            #arrow_down1{
+                opacity: 0.6;
+                top:93%;
+                left:46%;
+            position: absolute;
+           width:5%;
+            height:8%;
+            opacity: }
+            
+             #arrow_down2{
+                 opacity: 0.6;
+                top:93%;
+                left:46%;
+            position: absolute;
+          width:5%;
+            height:8%;
+            opacity: }
+             #arrow_up2{
+                 opacity: 0.6;
+                top:7%;
+                left:46%;
+            position: absolute;
+            width:5%;
+            height:8%;}
+            
+           #arrow_down3{
+               opacity: 0.6;
+                top:93%;
+                left:46%;
+            position: absolute;
+           width:5%;
+            height:8%;
+            opacity: }
+             #arrow_up3{
+                 opacity: 0.6;
+                top:7%;
+                left:46%;
+            position: absolute;
+           width:5%;
+            height:8%;}
+             
+             #arrow_down4{
+                 
+                 opacity: 0.6;
+                top:93%;
+                left:46%;
+            position: absolute;
+          width:5%;
+            height:8%;
+            opacity: }
+            
+             #arrow_up4{
+                 opacity: 0.6;
+                top:7%;
+                left:46%;
+            position: absolute;
+           width:5%;
+            height:8%;}
+            
+            
+        </style>
+    
+ 
+    </head>
+ <body id="page" onload="slideA()">
+     <script>
+     
+     $(document).ready(function(){$("#arrow_down1").click(function(){
+         $(".header").slideUp("slow");
+         $(".heade").slideUp("slow");
+         
+       
+          $("#container1").slideUp("slow");
+        $("#container2").slideDown("slow");
+           $(".rightbox").fadeIn(1000);
+         $(".leftbox").fadeOut(500);
+         $("#destiname_r").fadeOut(500);
+         $("#destiname_l").fadeIn(1000);
+         
+    });});
+         
+         $(document).ready(function(){
+         $("#arrow_up2").click(function(){ 
+             $(".header").slideDown("slow");
+         $(".heade").slideDown("slow");        
+                          
+     $("#container2").css("top","");
+          $("#container2").css("bottom","0px");    
+         $("#container2").slideUp("slow");
+        $("#container1").slideDown("slow");
+           $(".leftbox").fadeIn(1000);
+         $(".rightbox").fadeOut(500);
+         $("#destiname_l").fadeOut(500);
+         $("#destiname_r").fadeIn(1000);
+         
+    });});
+         
+          $(document).ready(function(){          
+         $("#arrow_down2").click(function(){    
+       
+          $("#container2").css("top","0px");   
+         $("#container2").slideUp("slow");
+        $("#container3").slideDown("slow");
+           $(".leftbox").fadeIn(1000);
+         $(".rightbox").fadeOut(500);
+         $("#destiname_l").fadeOut(500);
+         $("#destiname_r").fadeIn(1000);
+         
+    });});
+         
+          $(document).ready(function(){
+         $("#arrow_up3").click(function(){ 
+               $("#container3").css("top","");
+          $("#container3").css("bottom","0px");    
+            
+         $("#container3").slideUp("slow");
+        $("#container2").slideDown("slow");
+           $(".rightbox").fadeIn(1000);
+         $(".leftbox").fadeOut(500);
+         $("#destiname_r").fadeOut(500);
+         $("#destiname_l").fadeIn(1000);
+         
+    });});
+         $(document).ready(function(){          
+         $("#arrow_down3").click(function(){    
+       
+          $("#container3").css("top","0px");   
+         $("#container3").slideUp("slow");
+        $("#container4").slideDown("slow");
+           $(".rightbox").fadeIn(1000);
+         $(".leftbox").fadeOut(500);
+         $("#destiname_r").fadeOut(500);
+         $("#destiname_l").fadeIn(1000);
+         
+    });});
+         
+          $(document).ready(function(){
+         $("#arrow_up4").click(function(){ 
+               $("#container4").css("top","");
+          $("#container4").css("bottom","0px");    
+            
+         $("#container4").slideUp("slow");
+        $("#container3").slideDown("slow");
+           $(".leftbox").fadeIn(1000);
+         $(".rightbox").fadeOut(500);
+         $("#destiname_l").fadeOut(500);
+         $("#destiname_r").fadeIn(1000);
+         
+    });});
+         
+         
+         
+       
+     </script>
+     <?php
+	 $host="localhost"; // Host name 
+$username=""; // Mysql username 
+$password=""; // Mysql password 
+$db_name="test"; // Database name 
+$tbl_name="members"; // Table name 
+
+// Connect to server and select databse.
+mysql_connect("$host", "$username", "$password")or die("cannot connect"); 
+mysql_select_db("$db_name")or die("cannot select DB");
+
+$destname=$_POST['subcat'];echo $destname;
+	 ?>
+         <div id="container1">
+    <img src="img1.jpg" id="image1"/>
+          
+<img   id ="arrow_down1" src="down_arrow.png"></img>
+    
+    
+    </div>
+      <div id="container2">
+    <img src="img2.jpg" id="image2"/>
+          <img  id="arrow_up2" src="up_arrow.png"></img>
+          
+<img id ="arrow_down2" src="down_arrow.png"></img>
+    
+    
+    </div>
+ <div id="container3">
+    <img src="img3.jpg" id="image3"/>
+          <img  id="arrow_up3" src="up_arrow.png"></img>
+          
+<img id ="arrow_down3" src="down_arrow.png"></img>
+    
+    
+    </div>
+
+
+ <div id="container4">
+    <img src="img4.jpg" id="image4"/>
+          <img  id="arrow_up4" src="up_arrow.png"></img>
+          
+
+    
+    
+    </div>
+     
+     <div class="leftbox" ></div>
+<div class="rightbox" ></div>
+     <div>
+     <h3 id="destiname_r">Victoria Falls</h2>
+            <h3 id="destiname_l">Victoria Falls</h2>
+     </div>
+   
+     
+     </div></a>
+     
+	 <div class="heade"></div>
+	 <div class="header"><h1><pre class="pro" style="color:#FFFFFF">       Xplore2Day</pre></h1></div>
+   
+ 
+</body>
+</html>

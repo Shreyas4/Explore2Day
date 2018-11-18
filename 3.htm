@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="slide.css">
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="slide.js">
+       
+    
+    </script>
+        <style>
+            body{
+                 margin:0;
+    height:100%;
+    overflow:hidden;
+            }
+          
+   
+
+            .box{
+               border-radius: 10px;
+            background-color: black;
+                position: absolute;
+                top: 16%;
+                left: 10%;
+                width: 80%;
+                height:76%;
+                opacity: 0.6;
+               
+            
+            }
+           .heade{ font-family: gabriola;
+                position: absolute;
+                left: -2px;
+                top:-6px;
+                width: 100%;
+                height: 100px;
+                background: black;
+                opacity: 0.6;
+            }
+            .header{ font-family: gabriola;
+                position: absolute;
+                left: -2px;
+                top:-40px;
+                width: 120%;
+                height: 100px;
+                
+                opacity: 1;
+            }
+            
+			 .pro{font-size:160%;
+							  font-family: gabriola;}
+            
+      
+		.explorebox{
+               border-radius: 10px;
+                position: absolute;
+                top: 16%;
+                left: 25%;
+                font-family: gabriola;
+				font-size: 200%;
+                   }
+            .form {
+	width: 37%;
+                top:20%;
+                left: 15%;
+                color: white;
+                position: absolute;
+                height: 60%
+}
+            #tarea {
+                border-radius: 10px;
+                border: 2px solid white;
+                color: white;
+                overflow: hidden;
+                opacity: 0.6;
+	background: black;
+}
+             #desc {
+                border-radius: 10px;
+                border: 2px solid white;
+                color: white;
+                overflow: hidden;
+                opacity: 0.6;
+	background: black;
+                 
+}
+            .form img {position: absolute;
+                left:80%;
+                top: 5%;
+                width: 10%;
+                opacity: 0.6;
+	
+}
+        </style>
+    
+ 
+    </head>
+ <body id="page" onload="slideA()">
+        <div id="container">
+    <img src="img1.jpg" id="img"/>
+<div id="left_holder"><img onclick ="slide(-1)" class="left" src="left_arrow.png"/></div>        
+<div id="right_holder"><img class="right" onclick ="slide(1)" src="right_arrow.png"/></div>  
+        <div class="controller">
+        <ul style="list-style-type:none">
+        <li><img id="cir" src="but.png" onclick="change(1)"</li>
+        <li><img id="cir" src="but.png"onclick="change(2)"</li>  
+        <li><img id="cir"src="but.png"onclick="change(3)"</li>
+              <li><img id="cir"src="but.png"onclick="change(4)"</li> 
+        
+            
+             </ul>
+        
+        
+        </div>
+    
+    
+    </div>
+    
+   <div class="box">
+       
+     </div>
+     <div class="form">
+     <form>
+         Location Address<br><br>
+         <textarea id="tarea" rows="10" cols="60"></textarea><br><br>
+         Location Description<br><br>
+         <textarea id="desc" rows="18" cols="60"></textarea>
+        
+          <img src="train.png"></img>
+         </form>
+     
+     </div>
+    
+   <div class="heade"></div>
+	 <div class="header"><h1><pre class="pro" style="color:#FFFFFF">         Xplore2Day</pre></h1></div>
+ 
+</body>
+</html>

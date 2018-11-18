@@ -1,0 +1,79 @@
+ body{background-color: black;
+                 margin:0;
+    height:100%;
+    overflow:hidden;
+            }
+    #container {
+       position: absolute;
+     height:100%;
+        width:100%;
+      
+        
+    }
+        .right{ opacity:0; }
+.left{ opacity:0; }
+#right_holder:hover .right {
+opacity:0.6;
+}
+#left_holder:hover .left {
+opacity:0.6;
+}
+        #img{
+            position: absolute;
+        height: 100%;
+        width:100%;
+        
+        
+        }
+        #left_holder{
+            left: 0px;
+            top=0px;
+        width: 7%;
+            height: 100%;
+            position: absolute;
+        }
+        #right_holder{
+            
+          right: 0px;
+            top=0px;
+        width: 7%;
+            height: 100%;
+            position: absolute;   
+        }
+        .left{
+         height: 6.5%;
+            width: 50%;
+            position: absolute;
+            top:45%;
+            left: 15%;
+        }
+         .right{
+         height: 6.5%;
+            width: 50%;
+            position: absolute;
+            top:45%;
+            right: 15%;
+        }
+        .controller{
+            width: 16%;
+            height: 10%;
+            top:89%;
+            left: 42.5%;
+       
+         z-index: 10;
+            
+            position: absolute;
+       }
+        .controller li{ display: inline;
+           
+       }
+        .controller li img { width: 5%;
+            margin: 4.5%;
+            opacity: 0.6;
+           
+            height: 5%}
+        .controller li img:hover { width: 5%;
+            margin: 4.5%;
+            opacity: 1;
+           
+            height: 5%}
